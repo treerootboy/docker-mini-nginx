@@ -9,4 +9,6 @@ EXPOSE 443
 
 RUN adduser -u8080 -D -H www
 
+VOLUME /www
+
 CMD nginx -g 'daemon off;'
